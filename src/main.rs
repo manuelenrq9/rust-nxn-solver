@@ -6,7 +6,6 @@ fn main() {
 }
 
 fn create_augmented_matrix() -> Vec<Vec<i32>> {
-    // Request and get user input for N
     println!("Please write down the value for N: ");
     let n: i32 = get_i32_from_user();
 
@@ -22,7 +21,6 @@ fn create_augmented_matrix() -> Vec<Vec<i32>> {
         let mut inner_vector: Vec<i32> = Vec::new();
 
         for j in 0..=n {
-            // input for the coefficient value
             println!("Please enter the coeficient for the variable {}", j + 1);
             let coefficient: i32 = get_i32_from_user();
 
@@ -38,7 +36,6 @@ fn create_augmented_matrix() -> Vec<Vec<i32>> {
 }
 
 fn get_i32_from_user() -> i32 {
-    //Declare String value
     let mut s: String = String::new();
 
     //get user input as a String and store it in s
