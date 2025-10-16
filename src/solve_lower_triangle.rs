@@ -1,6 +1,6 @@
 use crate::pivot_row_division;
 use crate::solve_lower_column;
-use crate::swap_rows;
+use crate::swap_pivot;
 
 pub fn solve_lower_triangle(matrix: &mut Vec<Vec<f64>>, n: i32) {
     for pivot_index in 0..n {
@@ -9,7 +9,7 @@ pub fn solve_lower_triangle(matrix: &mut Vec<Vec<f64>>, n: i32) {
 
         let mut pivot_value: f64 = matrix[pivot_index as usize][pivot_index as usize];
         if pivot_value == 0.0 {
-            swap_rows::swap_rows(n, pivot_index, matrix);
+            swap_pivot::swap_pivot(n, pivot_index, matrix);
             pivot_value = matrix[pivot_index as usize][pivot_index as usize];
             if pivot_value == 0.0 {}
         }

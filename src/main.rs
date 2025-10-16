@@ -10,6 +10,7 @@ mod solve_lower_column;
 mod solve_lower_triangle;
 mod solve_upper_column;
 mod solve_upper_triangle;
+mod swap_pivot;
 mod swap_rows;
 
 fn main() {
