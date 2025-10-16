@@ -4,6 +4,8 @@ mod create_augmented_matrix;
 mod get_f64_from_user;
 mod get_i32_from_user;
 mod pivot_row_division;
+mod search_pivot_below;
+mod search_pivot_right;
 mod show_augmented_matrix;
 mod solve_augmented_matrix;
 mod solve_lower_column;
