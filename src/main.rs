@@ -20,8 +20,6 @@ fn main() {
     let n: i32 = get_i32_from_user::get_i32_from_user();
     let mut matrix: Vec<Vec<f64>> = create_augmented_matrix::create_augmented_matrix(&n);
     show_augmented_matrix::show_augmented_matrix(&matrix, &n);
-    println!("===============================================================");
-    println!("===============================================================");
     solve_augmented_matrix::solve_augmented_matrix(&mut matrix, n);
     show_augmented_matrix::show_augmented_matrix(&matrix, &n);
 }
