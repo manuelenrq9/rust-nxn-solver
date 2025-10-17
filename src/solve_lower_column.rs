@@ -1,3 +1,5 @@
+use crate::check_logical_contradiction;
+
 pub fn solve_lower_column(n: i32, pivot_index: i32, matrix: &mut Vec<Vec<f64>>) {
     //make all values below the pivot element equal to zero,
     //by substracting the pivot element's row multiplied by
@@ -8,5 +10,6 @@ pub fn solve_lower_column(n: i32, pivot_index: i32, matrix: &mut Vec<Vec<f64>>) 
             let substracting_value: f64 = matrix[pivot_index as usize][j as usize] * row_multiplier;
             matrix[i as usize][j as usize] -= substracting_value;
         }
+        check_logical_contradiction::check_logical_contradiction(matrix, i, n);
     }
 }
