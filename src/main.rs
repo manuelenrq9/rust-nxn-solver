@@ -2,6 +2,7 @@ mod check_logical_contradiction;
 mod convert_string_to_f64;
 mod convert_string_to_i32;
 mod create_augmented_matrix;
+mod epsilon_check;
 mod get_f64_from_user;
 mod get_i32_from_user;
 mod pivot_row_division;
