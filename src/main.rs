@@ -9,6 +9,7 @@ mod pivot_row_division;
 mod search_pivot_below;
 mod search_pivot_right;
 mod show_augmented_matrix;
+mod show_results;
 mod solve_augmented_matrix;
 mod solve_lower_column;
 mod solve_lower_triangle;
@@ -24,4 +25,5 @@ fn main() {
     show_augmented_matrix::show_augmented_matrix(&matrix, n);
     solve_augmented_matrix::solve_augmented_matrix(&mut matrix, n);
     show_augmented_matrix::show_augmented_matrix(&matrix, n);
+    show_results::show_results(matrix, n);
 }
