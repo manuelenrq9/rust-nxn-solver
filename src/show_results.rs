@@ -1,3 +1,5 @@
+use crate::format_zero::format_zero;
+
 pub fn show_results(matrix: Vec<Vec<f64>>, n: i32) {
     let mut value: f64;
     let mut first_variable: bool;
@@ -8,16 +10,23 @@ pub fn show_results(matrix: Vec<Vec<f64>>, n: i32) {
             value = matrix[i as usize][j as usize];
             if value != 0.0 {
                 if !first_variable && value > 0.0 {
-                    print!("+");
+                    print!("+ ");
                 };
-                coeficient = "".to_string();
-                if value > 1.0 || value < -1.0 {
+
+                if value == 1.0 {
+                    coeficient = "".to_string();
+                } else if value == -1.0 {
+                    coeficient = "- ".to_string();
+                } else {
                     coeficient = value.to_string();
                 }
+
                 print!("{}x{} ", coeficient, j + 1);
                 first_variable = false;
             }
         }
-        println!(" = {}", matrix[i as usize][n as usize]);
+        if !first_variable {
+            println!(" = {:.2}", format_zero(matrix[i as usize][n as usize]));
+        }
     }
 }
