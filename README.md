@@ -8,7 +8,7 @@ The results can vary depending on the system, with the posibilities being:
 
 * Unique solution, so the the calculator shows the value for each of the N variables on the system.
 
-* Parameterized solutions, on which case it will show the resulting equations that express the poisble solutions.
+* Parameterized solutions, on which case it will show the resulting equations that express the posible solutions.
 
 * The system has no solution, on which case the calculator will display a message informing on this result.
 
