@@ -21,7 +21,8 @@ curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs
 (Note: If you are on Windows, you can download the installer directly from the official website or use the Windows Subsystem for Linux (WSL).)
 
 * Configure your current shell to recognize the Rust environment:
-source $HOME/.cargo/env
+  
+´source $HOME/.cargo/env´
 
 * Verify the installation:
 rustc --version
