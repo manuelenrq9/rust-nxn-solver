@@ -15,7 +15,7 @@ The results can vary depending on the system, with the posibilities being:
 ## How to install and use this software
 
 To run this project, you must have the Rust toolchain installed. This includes the Rust compiler (rustc) and the package manager (cargo).
-The easiest way to install is using rustup, the official installer.
+The easiest way to install it is using rustup, the official installer.
 
 * to install rustup run the following command on your terminal :
 ```bash
