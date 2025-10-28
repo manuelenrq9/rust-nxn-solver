@@ -17,11 +17,11 @@ The results can vary depending on the system, with the posibilities being:
 To run this project, you must have the Rust toolchain installed. This includes the Rust compiler (rustc) and the package manager (cargo).
 The easiest way to install is using rustup, the official installer.
 
-* to install rustup run the following command on your terminal:
+* to install rustup run the following command on your terminal :
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
-(Note: If you are on Windows, you can download the installer directly from the official website or use the Windows Subsystem for Linux (WSL).)
 ```
+If you are on Windows, you can download the installer directly from the official website or use the Windows Subsystem for Linux (WSL).
 
 * Configure your current shell to recognize the Rust environment:
 ```bash
