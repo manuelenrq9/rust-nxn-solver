@@ -6,7 +6,7 @@ This project is a calculator for Systems of Linear equations consisting of N equ
 
 The results can vary depending on the system, with the posibilities being:
 
-* Unique solution, so the the calculator shows the value for each of the N variables on the system.
+* Unique solution, so the calculator shows the value for each of the N variables on the system.
 
 * Parameterized solutions, on which case it will show the resulting equations that express the posible solutions.
 
