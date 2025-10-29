@@ -21,7 +21,7 @@ fn main() {
     println!("Welcome to the NxN calculator for systems of linear equations");
     println!("Please write down the value for N: ");
     let n: i32 = get_i32_from_user::get_i32_from_user();
-    let mut matrix: Vec<Vec<f64>> = create_augmented_matrix::create_augmented_matrix(&n);
+    let mut matrix: Vec<Vec<f64>> = create_augmented_matrix::create_augmented_matrix(n);
     show_augmented_matrix::show_augmented_matrix(&matrix, n);
     solve_augmented_matrix::solve_augmented_matrix(&mut matrix, n);
     show_augmented_matrix::show_augmented_matrix(&matrix, n);
